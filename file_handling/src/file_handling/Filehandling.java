@@ -26,6 +26,14 @@ public class Filehandling{
 	          System.out.println("An error occurred.");
 	          e.printStackTrace();
 	    } try {
+	          FileWriter myWriter1 = new FileWriter("filename.txt");
+	          myWriter1.write("Appending done using filewriter!");
+	          myWriter1.close();
+	          System.out.println("Successfully appended the file.");
+	        } catch (IOException e) {
+	          System.out.println("An error occurred.");
+	          e.printStackTrace();
+	      try {
 	        File myObj = new File("filename.txt");
 	        Scanner myReader = new Scanner(myObj);
 	        while (myReader.hasNextLine()) {
@@ -33,12 +41,12 @@ public class Filehandling{
 	          System.out.println(data);
 	        }
 	        myReader.close();
-	      } catch (FileNotFoundException e) {
+	      } catch (FileNotFoundException e1) {
 	        System.out.println("An error occurred.");
-	        e.printStackTrace();
+	        e1.printStackTrace();
 	      }
 	    }
 	  
 
 
-}
+}}
