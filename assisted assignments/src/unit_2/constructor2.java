@@ -1,14 +1,15 @@
 package unit_2;
 
-public class constructor2{  int id;  
-String name;  
-//creating a parameterized constructor 
-constructor2(int i,string){  
-id = i;  
-name = string;  
-}  
+public class constructor2{    
   
-void display(){System.out.println(id+" "+name);}  
+  
+public constructor2(int id, java.lang.String name) {
+	// TODO Auto-generated constructor stub
+  
+}  
+
+void display(){String name = null;int id = 0;
+System.out.println(id+" "+name);}  
 
 public static void main(String args[]){  
 //creating objects and passing values  
